@@ -5,7 +5,6 @@ html {
   padding: 0;
 }
 
-
 footer {
   position: fixed;
   left: 0;
@@ -14,10 +13,11 @@ footer {
   background-color: #f5f5f5;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: center;
 }
 
 nav {
@@ -43,4 +43,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+picture img {
+  width: 9rem;
 }
