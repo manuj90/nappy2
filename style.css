@@ -6,6 +6,10 @@ html {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.container{
+  margin: 0 3rem 0 3rem;
+}
+
 footer {
   position: fixed;
   left: 0;
