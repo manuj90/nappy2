@@ -4,22 +4,20 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Nunito Sans', sans-serif;
+  background-color: #ebebeb;
 }
 
-.container{
-  margin: 0 3rem 0 3rem;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #f5f5f5;
-}
+
 
 .footer {
   display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
@@ -33,6 +31,7 @@ nav {
 #logo {
   display: flex;
   justify-content: center;
+  /* filter: invert(); */
 }
 
 ul {
@@ -54,6 +53,10 @@ picture img {
   width: 9rem;
 }
 
-.introTwo{
+.introTwo {
   font-family: 'Great Vibes', cursive;
+}
+
+.bg-koalas{
+  width: 1300px;
 }
