@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Nunito Sans', sans-serif;
+  /** font-family: 'Great Vibes', cursive; **/
   background-color: #ebebeb;
 }
 
@@ -11,8 +12,6 @@ html {
   max-width: 1300px;
   margin: 0 auto;
 }
-
-
 
 .footer {
   display: flex;
@@ -25,7 +24,8 @@ html {
 
 nav {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -45,6 +45,10 @@ ul {
   justify-content: space-around;
 }
 
+#menu li {
+  margin: 2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -53,10 +57,21 @@ picture img {
   width: 9rem;
 }
 
-.introTwo {
-  font-family: 'Great Vibes', cursive;
+.bg-koalas {
+  width: 1300px;
 }
 
-.bg-koalas{
-  width: 1300px;
+.nappy_logo2{
+  width: 40rem;
+}
+
+.heroSection div:last-child{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero_text {
+  font-size: 1.5rem;
+    padding: 1rem;
 }
