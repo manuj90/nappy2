@@ -1,10 +1,10 @@
 body {
   height: 500px;
-  background-color: #fff3f5;
-  color: #170614;
+  background-color: #170614;
+  color: #fff3f5;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 button {
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(0, 255, 85) ;
 }
