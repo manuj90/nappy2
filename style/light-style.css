@@ -3,10 +3,13 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-  body.light {
+  body.light{
     background-color: #fff3f5;
     color: #000000; /* Assuming you want dark text on light background */
   }
 
   /* Add other light mode specific styles here */
+  .cls-2 {
+      fill: white; 
+  }
 }
