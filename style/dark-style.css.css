@@ -1,0 +1,12 @@
+body {
+  height: 500px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.dark {
+    background-color: #170614;
+    color: #ffffff; /* Assuming you want light text on dark background */
+  }
+
+  /* Add other dark mode specific styles here */
+}
