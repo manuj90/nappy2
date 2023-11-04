@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #170614;
+  --secondary-color: #fff3f5;
+}
+
 body {
   height: 500px;
   background-color: #fff3f5;
@@ -5,6 +10,61 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-button {
-  border: 1px solid rgb(255, 0, 0);
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  width: 4rem;
+  transition: all 0.5s;
+}
+
+.navLogo:hover {
+  transform: scale(1.1);
+}
+
+.navOps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navOps li {
+  margin: 0 2rem 0 2rem;
+  list-style-type: none;
+}
+
+.navOps li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.navOps li a:hover {
+  color: aqua;
+  transform: scale(1.1);
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.navTheme-toggle {
+  width: 2.5rem;
 }

@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet" />
     <meta name="theme-color" content="#170614" />
     <link rel="stylesheet" id="theme-style" href="/style/dark-style.css" />
     <link rel="shortcut icon" href="/assets/nappy.svg" type="image/x-icon" />
@@ -11,9 +16,35 @@
 
   <body>
     <div id="container">
-      <h1 class="change-color">nappy the place to sleep</h1>
+      <header>
+        <nav id="navbar">
+          <a href="">
+            <picture>
+              <source srcset="/assets/nappyB.webp" type="image/webp" />
+              <source srcset="/assets/nappyB.png" type="image/jpeg" />
+              <img class="navLogo" src="/assets/nappyB.png" alt="Nappy Logo" />
+            </picture>
+          </a>
+          <ul class="navOps">
+            <li><a href="">About US</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
 
-      <button id="theme-toggle">Cambiar Tema</button>
+          <button id="theme-toggle" type="button">
+            <picture>
+              <source srcset="/assets/sun.webp" type="image/webp" />
+              <source srcset="/assets/sun.png" type="image/jpeg" />
+              <img
+                class="navTheme-toggle"
+                src="/assets/nappyB.png"
+                alt="Theme switch" />
+            </picture>
+          </button>
+        </nav>
+      </header>
+
+      <h1 class="change-color">nappy the place to sleep</h1>
 
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla odit
