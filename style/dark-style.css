@@ -21,13 +21,19 @@ body {
   padding: 3px;
 }
 
-#navbar {
+#navbar,
+footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(14.5px);
+  backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .navLogo {
@@ -38,6 +44,7 @@ body {
 
 .navLogo:hover {
   transform: scale(1.1);
+  filter: invert(1) drop-shadow(0px 0px 10px var(--tertiary-color));
 }
 
 .navOps {
@@ -54,7 +61,8 @@ body {
   list-style-type: none;
 }
 
-.navOps li a {
+.navOps li a,
+a {
   display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);

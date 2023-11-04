@@ -8,6 +8,7 @@
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not and_ff <= 116"
+    "not and_ff <= 116",
+    "not firefox <= 117"
   ]
 }
