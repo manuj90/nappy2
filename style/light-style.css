@@ -1,6 +1,9 @@
 :root {
   --primary-color: #170614;
   --secondary-color: #fff3f5;
+  --tertiary-color: #c099a0;
+  --fourth-color: #243a5c;
+  --fifth-color: #e4d2d8;
 }
 
 body {
@@ -8,6 +11,8 @@ body {
   background-color: #fff3f5;
   color: #170614;
   transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: 'Nunito', sans-serif;
+  /**font-family: 'Great Vibes', cursive;**/
 }
 
 #container {
@@ -56,8 +61,10 @@ body {
 }
 
 .navOps li a:hover {
-  color: aqua;
-  transform: scale(1.1);
+  color: var(--tertiary-color);
+  transform: translate(0, 0.3rem);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 #theme-toggle {
@@ -66,5 +73,5 @@ body {
 }
 
 .navTheme-toggle {
-  width: 2.5rem;
+  width: 2rem;
 }

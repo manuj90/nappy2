@@ -1,6 +1,9 @@
 :root {
   --primary-color: #170614;
   --secondary-color: #fff3f5;
+  --tertiary-color: #c099a0;
+  --fourth-color: #243a5c;
+  --fifth-color: #e4d2d8;
 }
 
 body {
@@ -59,15 +62,18 @@ body {
 }
 
 .navOps li a:hover {
-  color: aqua;
-  transform: scale(1.1);
+  color: var(--tertiary-color);
+  transform: translate(0, 0.3rem);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 #theme-toggle {
   background-color: transparent;
   border: none;
+  filter: invert();
 }
 
 .navTheme-toggle {
-  width: 2.5rem;
+  width: 2rem;
 }
