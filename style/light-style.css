@@ -97,9 +97,8 @@ a {
   width: 2rem;
 }
 
-.navTheme-toggle:hover{
+.navTheme-toggle:hover {
   filter: drop-shadow(0 0 10px #000000) invert(0);
-
 }
 
 .footerLogo {
@@ -126,10 +125,7 @@ a {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(
-    -50%,
-    -50%
-  );
+  transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
   color: var(--secondary-color);
@@ -142,10 +138,10 @@ a {
   filter: drop-shadow(1px 1px 2px black) drop-shadow(2px 2px 4px grey);
 }
 
-.home .text img{
+.home .text img {
   width: 50rem;
   margin-top: 20rem;
-  filter:drop-shadow(0 0 5rem var(--fourth-color));
+  filter: drop-shadow(0 0 5rem var(--fourth-color));
   opacity: 80%;
 }
 
