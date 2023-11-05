@@ -16,13 +16,14 @@ body {
 }
 
 #container {
-  max-width: 1300px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 3px;
 }
 
 #navbar,
 footer {
+   width: 80rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,14 +37,25 @@ footer {
   padding: 1rem;
 }
 
-.navLogo {
+#navbar {
+  position: fixed;
+
+  height: 3rem;
+}
+
+.navLogo img {
   width: 4rem;
   transition: all 0.5s;
 }
 
-.navLogo:hover {
+.navLogo img:hover {
   transform: scale(1.1);
   filter: drop-shadow(0px 0px 10px var(--tertiary-color));
+}
+
+.navLogo span {
+  color: transparent;
+  display: none;
 }
 
 .navOps {
@@ -82,4 +94,47 @@ a {
 
 .navTheme-toggle {
   width: 2rem;
+}
+
+.footerLogo {
+  width: 8rem;
+}
+
+.home h2 {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.koala1 {
+  width: 20rem;
+  margin: 5rem;
+  filter: drop-shadow(0 2px 10px var(--fourth-color));
+  animation: colorGlow 5s infinite alternate;
+}
+
+@keyframes colorGlow {
+  0%, 100% {
+    filter: drop-shadow(0 2px 10px var(--primary-color));
+  }
+  33% {
+    filter: drop-shadow(0 2px 15px var(--fourth-color));
+  }
+  67% {
+    filter: drop-shadow(0 2px 20px var(--tertiary-color));
+  }
+}
+
+.homep1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.homep1 p {
+  font-size: 2rem;
+  font-weight: lighter;
 }

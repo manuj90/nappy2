@@ -4,21 +4,21 @@ document.getElementById('theme-toggle').addEventListener('click', function () {
   let themeImageWebP = document.querySelector(
     '#theme-toggle source[type="image/webp"]'
   );
-  let themeImageJPEG = document.querySelector(
-    '#theme-toggle source[type="image/jpeg"]'
+  let themeImagePNG = document.querySelector(
+    '#theme-toggle source[type="image/png"]'
   );
 
   if (themeStyle.getAttribute('href') == '/style/dark-style.css') {
     themeStyle.href = '/style/light-style.css';
     themeImageWebP.srcset = '/assets/moon.webp';
-    themeImageJPEG.srcset = '/assets/moon.png';
+    themeImagePNG.srcset = '/assets/moon.png';
     themeImage.src = '/assets/moon.png';
     themeImage.alt = 'Switch to dark theme';
     localStorage.setItem('theme', 'light');
   } else {
     themeStyle.href = '/style/dark-style.css';
     themeImageWebP.srcset = '/assets/sun.webp';
-    themeImageJPEG.srcset = '/assets/sun.png';
+    themeImagePNG.srcset = '/assets/sun.png';
     themeImage.src = '/assets/sun.png';
     themeImage.alt = 'Switch to light theme';
     localStorage.setItem('theme', 'dark');
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let themeImageWebP = document.querySelector(
     '#theme-toggle source[type="image/webp"]'
   );
-  let themeImageJPEG = document.querySelector(
-    '#theme-toggle source[type="image/jpeg"]'
+  let themeImagePNG = document.querySelector(
+    '#theme-toggle source[type="image/png"]'
   );
 
   let savedTheme = localStorage.getItem('theme');
@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   if (savedTheme === 'dark') {
     themeStyle.href = '/style/dark-style.css';
     themeImageWebP.srcset = '/assets/sun.webp';
-    themeImageJPEG.srcset = '/assets/sun.png';
+    themeImagePNG.srcset = '/assets/sun.png';
     themeImage.src = '/assets/sun.png';
     themeImage.alt = 'Switch to light theme';
   } else if (savedTheme === 'light') {
     themeStyle.href = '/style/light-style.css';
     themeImageWebP.srcset = '/assets/moon.webp';
-    themeImageJPEG.srcset = '/assets/moon.png';
+    themeImagePNG.srcset = '/assets/moon.png';
     themeImage.src = '/assets/moon.png';
     themeImage.alt = 'Switch to dark theme';
   }
