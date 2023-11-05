@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #180614;
+	--primary-color: #170614;
 	--secondary-color: #c099a0;
 	--tertiary-color: #e4d2d8;
 	--quaternary-color: #243a5c;
@@ -18,10 +18,10 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	background: #180614bd;
-	color: var(--tertiary-color);
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
+	background: #170614c8;
+	color: var(--quinary-color);
+	-webkit-backdrop-filter: blur(0.5rem);
+	backdrop-filter: blur(0.5rem);
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 .navbarMenu:hover {
-	transform: translateY(0.2rem);
+	transform: translateY(-0.1rem);
 	color: white;
 	filter: drop-shadow(0 0 0.5rem var(--quaternary-color));
 }
