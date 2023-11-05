@@ -18,14 +18,12 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	position: fixed;
-	margin: 0 auto;
-	padding: 0.5rem;
-	background: #1806148d;
+	background: #180614bd;
 	color: var(--tertiary-color);
 	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+	position: fixed;
+	width: 100%;
 	z-index: 999;
 }
 
@@ -36,7 +34,7 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 nav ul li {
@@ -45,7 +43,7 @@ nav ul li {
 }
 
 .navbarLogo {
-	width: 3rem;
+	width: 4rem;
 	transition: all 1s ease;
 }
 
@@ -60,9 +58,8 @@ nav ul li {
 }
 
 .navbarMenu:hover {
-	transform: translateY(-0.1rem);
-	text-decoration: underline;
-	text-underline-offset: 1rem;
+	transform: translateY(0.2rem);
+	color: white;
 	filter: drop-shadow(0 0 0.5rem var(--quaternary-color));
 }
 
@@ -71,4 +68,52 @@ nav ul li a {
 	color: var(--tertiary-color);
 	font-family: var(--primary-font);
 	display: inline-block;
+}
+
+/*Seccion Hero*/
+
+.hero_section {
+	position: relative;
+	margin: 0 auto;
+	width: 80rem;
+	max-width: 100%;
+}
+
+.koala_hero {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.text_hero {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--primary-color);
+	filter: drop-shadow(0 0 10px var(--quaternary-color))
+		drop-shadow(0 0 20px var(--tertiary-color))
+		drop-shadow(0 0 30px var(--quinary-color));
+	font-family: var(--primary-font);
+	text-align: center;
+	width: 100%;
+}
+
+.text_hero h1 {
+	font-size: 4rem;
+}
+
+.text_hero h2 {
+	font-size: 27px;
+}
+
+.text_hero h3 {
+	font-size: 1.2rem;
+	width: 20rem;
+	margin: 0 auto;
+}
+
+.text_hero h2,
+h3 {
+	font-weight: 400;
 }

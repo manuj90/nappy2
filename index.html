@@ -24,6 +24,7 @@
 
 		<title>Document</title>
 	</head>
+
 	<body>
 		<header>
 			<nav>
@@ -38,9 +39,10 @@
 									srcset="/assets/navbar/nappyHome.png"
 									type="image/png" />
 								<img
-								class="navbarLogo"
+									class="navbarLogo"
 									src="/assets/navbar/nappyHome.png"
 									alt="Napy logo"
+									oncontextmenu="return false;"
 									title="Inicio" />
 							</picture>
 						</a>
@@ -51,5 +53,26 @@
 				</ul>
 			</nav>
 		</header>
+		<main>
+			<section class="hero_section">
+				<picture>
+					<source srcset="/assets/homePage/koala_hero.webp" type="image/webp" />
+					<source srcset="/assets/homePage/koala_hero.png" type="image/png" />
+					<img
+						src="/assets/homePage/koala_hero.png"
+						class="koala_hero"
+						oncontextmenu="return false;"
+						alt="Koala slepping in a branch" />
+				</picture>
+				<div class="text_hero">
+					<h1>Nappy</h1>
+					<h2>¡Redescubre el poder de un buen descanso!</h2>
+					<h3>
+						Relájate y recarga en nuestro siestario. Porque los sueños más
+						grandes empiezan con una gran siesta
+					</h3>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
