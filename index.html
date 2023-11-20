@@ -3,85 +3,54 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link
-			rel="shortcut icon"
-			href="/assets/favicon/nappyico-light.ico"
-			type="image/x-icon" />
-		<link
-			rel="shortcut icon"
-			href="/assets/favicon/nappyico-dark.ico"
-			type="image/x-icon"
-			media="(prefers-color-scheme: dark)" />
-
+		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
 			rel="stylesheet" />
-
-		<link rel="stylesheet" href="style.css" />
-
-		<title>Document</title>
+		<title>Nappy</title>
 	</head>
-
 	<body>
 		<div id="container">
 			<header>
-				<nav>
+				<nav class="navbar">
 					<ul>
 						<li>
-							<a href="/index.html">
-								<picture>
-									<source
-										srcset="/assets/navbar/nappyHome.webp"
-										type="image/webp" />
-									<source
-										srcset="/assets/navbar/nappyHome.png"
-										type="image/png" />
-									<img
-										class="navbarLogo"
-										src="/assets/navbar/nappyHome.png"
-										alt="Napy logo"
-										oncontextmenu="return false;"
-										title="Inicio" />
-								</picture>
+							<a href="">
+								<div class="navbarli">
+									<img src="/assets/navbar/home.png" alt="" />
+									<p>Inicio</p>
+								</div>
 							</a>
 						</li>
-						<li><a class="navbarMenu" href="">Nosotros</a></li>
-						<li><a class="navbarMenu" href="">Precios</a></li>
-						<li><a class="navbarMenu" href="">Contacto</a></li>
+						<li>
+							<a href="">
+								<div class="navbarli">
+									<img src="/assets/navbar/about.png" alt="" />
+									<p>Nosotros</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="navbarli">
+									<img src="/assets/navbar/product.png" alt="" />
+									<p>Productos</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="navbarli">
+									<img src="/assets/navbar/map.png" alt="" />
+									<p>Contacto</p>
+								</div>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</header>
-			<main>
-				<section class="hero_section">
-					<picture>
-						<source
-							srcset="/assets/homePage/koala_hero.webp"
-							type="image/webp" />
-						<source srcset="/assets/homePage/koala_hero.png" type="image/png" />
-						<img
-							src="/assets/homePage/koala_hero.png"
-							class="koala_hero"
-							oncontextmenu="return false;"
-							alt="Koala slepping in a branch" />
-					</picture>
-					<div class="text_hero">
-						<h1>Nappy</h1>
-						<h2>¡Redescubre el poder de un buen descanso!</h2>
-						<h3>
-							Relájate y recarga en nuestro siestario. Porque los sueños más
-							grandes empiezan con una gran siesta
-						</h3>
-					</div>
-				</section>
-
-				<div class="sections">
-					<section>Hola</section>
-					<section>hola2</section>
-				</div>
-			</main>
 		</div>
 	</body>
 </html>
