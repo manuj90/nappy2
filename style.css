@@ -89,12 +89,16 @@ footer {
 
 .herosection img {
 	width: 1300px;
+	margin-bottom: 3rem;
 }
 
-.homeSections {
+.homeSection {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 footer {
@@ -107,4 +111,106 @@ footer {
 	-webkit-backdrop-filter: blur(13px);
 	backdrop-filter: blur(13px);
 	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footerLogo {
+	width: 8rem;
+}
+
+.priceSection,
+.contactSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	height: 59rem;
+	width: 40rem;
+}
+
+.priceSection a,
+.contactSection a {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.priceSection:hover a,
+.contactSection:hover a {
+	opacity: 1;
+}
+
+.priceSection:hover .priceBG,
+.contactSection:hover .contactBG {
+	filter: blur(10px);
+}
+
+.priceBG,
+.contactBG {
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: contain;
+	transition: filter 0.3s ease;
+	z-index: -1;
+}
+
+.priceBG {
+	background-image: url('/assets/homePage/pexels-karolina-grabowska-4498195.webp');
+}
+
+.contactBG {
+	background-image: url(/assets/homePage/pexels-james-frid-2569220.webp);
+}
+
+.priceAct,
+.contactAct {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 2rem;
+	font-size: large;
+	color: var(--fifth-color);
+}
+
+.priceAct h2,
+.contactAct h2 {
+	font-size: 4rem;
+}
+
+.priceAct p,
+.contactAct p {
+	font-size: 1.5rem;
+}
+
+.boton-estilo {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: var(--primary-color);
+	color: var(--fifth-color);
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2rem;
+}
+
+iframe {
+	border: 1px solid var(--quaternary-color);
+	border-radius: 25px;
+	background: var(--quaternary-color);
+	box-shadow: inset 20px 20px 60px #1f314e, inset -20px -20px 60px #29436a;
+}
+
+.contactPage {
+	display: flex;
+	flex-direction: row;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 1rem;
 }
