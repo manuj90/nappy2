@@ -41,6 +41,8 @@ header {
 	animation: colorGlow 5s infinite alternate;
 }
 
+
+
 @keyframes colorGlow {
 	0%,
 	100% {
@@ -123,6 +125,31 @@ footer {
 	flex-wrap: wrap;
 }
 
+.lasthomebanner{
+	margin-top: 4rem;
+	width: 1300px;
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	justify-content: space-evenly;
+
+}
+
+.lasthomebanner img{
+	width: 46rem;
+	border-radius: 25px;
+}
+
+.lasthomebanner div h3{
+	font-family: var(--secondary-font);
+	font-size: 4rem;
+	color: var(--quaternary-color);
+}
+
+.lasthomebanner div p{
+	font-size: 1.5rem;
+}
+
 footer {
 	height: 4rem;
 	background-color: var(--tertiary-color);
@@ -149,6 +176,7 @@ footer {
 	overflow: hidden;
 	height: 59rem;
 	width: 40rem;
+	border-radius: 25px;
 }
 
 .priceSection a,
@@ -175,7 +203,8 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
 	transition: filter 0.3s ease;
 	z-index: -1;
 }
