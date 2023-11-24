@@ -1,152 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-      rel="stylesheet" />
-    <meta name="theme-color" content="#170614" />
-    <link rel="stylesheet" id="theme-style" href="/style/dark-style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet" />
+		<title>Nappy</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<nav class="navbar">
+					<div class="navbarHome">
+						<a href="#">
+							<h1>Inicio</h1>
+						</a>
+					</div>
 
-    <link
-      rel="icon"
-      href="/assets/nappy_dark.svg"
-      media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)" />
+					<ul>
+						<li>
+							<a href="#">
+								<p>Nosotros</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>Planes</p>
+							</a>
+						</li>
+						<li>
+							<a href="/pages/contact.html">
+								<p>Contacto</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<secttion class="herosection">
+					<img src="/assets/homePage/nappylogo.png" alt="" />
+				</secttion>
 
-    <link
-      rel="icon"
-      href="/assets/nappy_light.svg"
-      media="(prefers-color-scheme: dark)" />
+				<section class="homeSection">
+					<div class="priceSection">
+						<div class="priceBG"></div>
+						<div class="priceAct">
+							<h2>Planes</h2>
+							<p>Sabemos que para vos un buen descanso es importante,</p>
+							<p>por eso te invitamos a conocer nuestros planes</p>
+						</div>
+						<div>
+							<a href="#" class="boton-estilo"> Ver planes </a>
+						</div>
+					</div>
 
-    <title>Nappy</title>
-  </head>
+					<div class="contactSection">
+						<div class="contactBG"></div>
+						<div class="contactAct">
+									<h2>Contacto</h2>
+							<p>Queremos que puedas descansar,</p>
+							<p>por eso te dejamos uestra ubicacion, y vias de contacto</p>
+						</div>
+						<div>
+							<a href="/pages/contact.html" class="boton-estilo"> Contactanos </a>
+						</div>
+						</div>
+					</div>
+				</section>
+			</main>
 
-  <body>
-    <div id="container">
-      <header>
-        <nav id="navbar">
-          <a href="index.html">
-            <h1 class="navLogo">
-              <img src="/assets/nappyB.png" alt="Nappy Logo" />
-              <span>Nappy</span>
-            </h1>
-          </a>
-          <ul class="navOps">
-            <li><a href="/pages/about.html">Nosotros</a></li>
-            <li><a href="/pages/prices.html">Precio</a></li>
-            <li><a href="/pages/contact.html">Contacto</a></li>
-          </ul>
+			<footer>
+				<a
+					href="https://www.manuj90.com/"
+					target="_blank"
+					rel="noopener noreferrer">
+					<p>Juan Manuel Scagni</p>
+				</a>
 
-          <button id="theme-toggle" type="button">
-            <picture>
-              <source srcset="/assets/sun.webp" type="image/webp" />
-              <source srcset="/assets/sun.png" type="image/png" />
-              <img
-                class="navTheme-toggle"
-                src="/assets/nappyB.png"
-                alt="Theme switch" />
-            </picture>
-          </button>
-        </nav>
-      </header>
+				<p>DMN1B - Lógica de Programación</p>
 
-      <main>
-        <section class="home">
-          <span class="homeHero">
-            <picture>
-              <source srcset="/assets/koalaHero.webp" type="image/webp" />
-              <source srcset="/assets/koalaHero.jpg" type="image/jpg" />
-              <img
-                class="heroimg"
-                src="/assets/koalaHero.jpg"
-                alt="2 koalas sleeping" />
-            </picture>
-
-            <span class="text">
-              <picture>
-                <source srcset="/assets/nappy.webp" type="image/webp" />
-                <source srcset="/assets/nappy.png" type="image/jpg" />
-                <img class="heroimg" src="/assets/nappy.jpg" alt="nappy logo" />
-              </picture>
-              <h2>
-                Nappy nace del fantástico Koala, y de su capacidad de dormir 22
-                horas.
-              </h2>
-            </span>
-          </span>
-
-          <span class="homep1">
-            <picture>
-              <source srcset="/assets/Koala1.webp" type="image/webp" />
-              <source srcset="/assets/Koala1.png" type="image/png" />
-              <img class="koala1" src="/assets/Koala1.png" alt="Image koala" />
-            </picture>
-
-            <p>
-              El koala es un marsupial icónico nativo de Australia, este
-              mamífero ha desarrollado una capacidad única en su biología para
-              sobrevivir en ambientes con recursos alimentarios limitados… poder
-              dormir unas 22 horas al día
-            </p>
-          </span>
-
-          <span class="homep2">
-            <p>
-              Este extenso período de sueño del koala se debe a su dieta basada
-              en hojas de eucalipto, bajas en nutrientes y calorías, que le
-              demandan una alta eficiencia energética.
-            </p>
-          </span>
-
-          <span class="homep3">
-            <p>
-              Su capacidad para descansar la mayor parte del día, combinada con
-              su dieta y su anatomía arbórea adaptada, representa un ejemplo
-              interesante de cómo la biología da forma a la vida de las especies
-              en ecosistemas específicos.
-            </p>
-          </span>
-
-          <span class="homep4">
-            <p>
-              Nappy es una idea que esta dirigida a toda persona que trabaje, y
-              que quiera aprovechar al máximo su hora de descanso dentro de la
-              jornada laboral, dirigido a personas mayores de 18 años, creamos
-              un espacio seguro para que puedan recuperar las energías con una
-              de nuestras Power Naps
-            </p>
-          </span>
-        </section>
-      </main>
-
-      <footer>
-        <a
-          href="https://www.manuj90.com/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <p>Juan Manuel Scagni</p>
-        </a>
-
-        <p>DMN1B - Lógica de Programación</p>
-
-        <a
-          href="https://davinci.edu.ar/carreras/diseno-multimedial"
-          target="_blank"
-          rel="noopener noreferrer">
-          <picture>
-            <source srcset="/assets/davinciLogo.webp" type="image/webp" />
-            <source srcset="/assets//davinciLogo.png" type="image/jpeg" />
-            <img
-              class="footerLogo"
-              src="/assets//davinciLogo.png"
-              alt="Davinci Logo" />
-          </picture>
-        </a>
-      </footer>
-    </div>
-    <script src="script.js"></script>
-  </body>
+				<a
+					href="https://davinci.edu.ar/carreras/diseno-multimedial"
+					target="_blank"
+					rel="noopener noreferrer">
+					<picture>
+						<source srcset="/assets/davinciLogo.webp" type="image/webp" />
+						<source srcset="/assets//davinciLogo.png" type="image/jpeg" />
+						<img
+							class="footerLogo"
+							src="/assets//davinciLogo.png"
+							alt="Davinci Logo" />
+					</picture>
+				</a>
+			</footer>
+		</div>
+	</body>
 </html>
