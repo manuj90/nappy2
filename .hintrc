@@ -6,8 +6,23 @@
     "defaults",
     "not ie 11",
     "not and_ff <= 116",
+<<<<<<< HEAD
     "not firefox <= 117",
     "not and_ff <= 118",
     "not firefox <= 118"
   ]
+=======
+    "not firefox <= 117"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
+    ]
+  }
+>>>>>>> 0adff711b2afd940f0bffed6d248a8d97b956ea1
 }
